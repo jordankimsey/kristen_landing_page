@@ -9,13 +9,14 @@ const LinkButton = ({ url, text }: { url: string; text: string }) => {
         mt: 2,
         color: 'black',
         border: '0.1px solid black',
-        py: 1.3
+        py: 1.3,
       }}
+      href={url}
+      target='_blank'
+      rel='noreferrer noopener'
       fullWidth
     >
-      <a href={url} target='_blank' rel='noreferrer noopener'>
-        {text}
-      </a>
+      {text}
     </Button>
   );
 };
