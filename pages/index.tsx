@@ -12,7 +12,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <Typography>Hello</Typography>
+        <Typography>Future Home of Kristen&apos;s Vintage Home</Typography>
       </main>
     </div>
   );

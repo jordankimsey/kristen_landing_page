@@ -9,6 +9,7 @@ const LinkButton = ({ url, text }: { url: string; text: string }) => {
         mt: 2,
         color: 'black',
         border: '0.1px solid black',
+        py: 1.3
       }}
       fullWidth
     >
