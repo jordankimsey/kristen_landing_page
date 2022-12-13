@@ -1,4 +1,4 @@
-import { Box, Typography} from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import Image from 'next/image';
 import LinkButton from '../../components/LinkButton';
@@ -17,8 +17,12 @@ const index = () => {
       }}
     >
       <Box
-        maxWidth='md'
-        sx={{textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center'}}
+        sx={{
+          textAlign: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
       >
         <Image
           src={'/profile_pic.jpg'}
@@ -30,10 +34,15 @@ const index = () => {
         <Typography sx={{ py: 2, fontWeight: 'bold' }}>
           @kristensvintagehome
         </Typography>
-        <LinkButton text='Amazon' url='https://www.amazon.com' />
-        <LinkButton text='Amazon' url='https://www.amazon.com' />
-        <LinkButton text='Amazon' url='https://www.amazon.com' />
-        <LinkButton text='Amazon' url='https://www.amazon.com' />
+        <LinkButton text='Amazon Storefront' url='https://www.amazon.com' />
+        <LinkButton
+          text='Chicnchill Baskets: Use code KRISTEN55'
+          url='https://www.etsy.com/shop/Chicnchilldecor?coupon=KRISTEN55'
+        />
+        <LinkButton
+          text='TikTok'
+          url='https://www.tiktok.com/@kristensvintagehome'
+        />
       </Box>
     </Box>
   );
