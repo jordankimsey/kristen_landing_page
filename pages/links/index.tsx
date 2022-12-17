@@ -44,12 +44,12 @@ const index = () => {
           url='https://www.etsy.com/shop/Chicnchilldecor?coupon=KRISTEN55'
         />
         <LinkButton
-          text='TikTok'
-          url='https://www.tiktok.com/@kristensvintagehome'
+          text='Cusion Lab: Use code KRISTENSVINTAGEHOME10'
+          url='https://glnk.io/6xz8w/kristensvintagehome'
         />
         <LinkButton
-          text='Facebook'
-          url='https://www.facebook.com/profile.php?id=100082468073225'
+          text='TikTok'
+          url='https://www.tiktok.com/@kristensvintagehome'
         />
       </Box>
     </Box>
