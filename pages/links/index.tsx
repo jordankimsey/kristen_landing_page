@@ -44,7 +44,7 @@ const index = () => {
           url='https://www.etsy.com/shop/Chicnchilldecor?coupon=KRISTEN55'
         />
         <LinkButton
-          text='Cusion Lab: Use code KRISTENSVINTAGEHOME10'
+          text='Cushion Lab: Use code KRISTENSVINTAGEHOME10'
           url='https://glnk.io/6xz8w/kristensvintagehome'
         />
         <LinkButton
