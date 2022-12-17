@@ -26,7 +26,7 @@ const index = () => {
           color: 'white',
           display: { xs: 'block', sm: 'flex' },
           flexDirection: { sm: 'column' },
-          alignItems: {sm: 'center'},
+          alignItems: { sm: 'center' },
         }}
       >
         <Box
@@ -37,7 +37,7 @@ const index = () => {
             flexDirection: 'column',
             alignItems: 'center',
             py: 3,
-            px: {sm: 4},
+            px: { sm: 4 },
             borderRadius: '13px',
           }}
         >
@@ -62,6 +62,14 @@ const index = () => {
           <LinkButton
             text='Cushion Lab: Use code KRISTENSVINTAGEHOME10'
             url='https://glnk.io/6xz8w/kristensvintagehome'
+          />
+          <LinkButton
+            text='Clarifion: Use Code KRISTENSVINTAGEHOME for 15% off'
+            url='http://clarifion.com/kristensvintagehome'
+          />
+          <LinkButton
+            text='Hype Inda House: Shop Unique decor with code Kristen for 10% off your entire order '
+            url='http://www.hypeindahouse.com/Kristen'
           />
           <LinkButton
             text='TikTok'
