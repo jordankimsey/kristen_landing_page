@@ -69,7 +69,7 @@ const index = () => {
           />
           <LinkButton
             text='Hype Inda House: Shop Unique decor with code Kristen for 10% off your entire order '
-            url='http://www.hypeindahouse.com/Kristen'
+            url='https://www.hypeindahouse.com/kristen'
           />
           <LinkButton
             text='TikTok'
