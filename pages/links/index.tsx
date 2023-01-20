@@ -56,6 +56,10 @@ const index = () => {
             url='https://www.amazon.com/shop/kristenkimsey'
           />
           <LinkButton
+            text='Shop my home-LTK'
+            url='https://www.shopltk.com/explore/Kristen%E2%80%99svintagehome'
+          />
+          <LinkButton
             text='Chicnchill Baskets: Use code KRISTEN55'
             url='https://www.etsy.com/shop/Chicnchilldecor?coupon=KRISTEN55'
           />
