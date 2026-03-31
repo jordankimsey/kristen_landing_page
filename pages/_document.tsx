@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Html, Head, Main, NextScript, DocumentProps, DocumentContext } from 'next/document';
 import {
   DocumentHeadTags,
@@ -6,10 +5,11 @@ import {
   documentGetInitialProps,
 } from '@mui/material-nextjs/v16-pagesRouter';
 import theme, { roboto } from '../theme';
+import { emotionCache } from '../src/createEmotionCache';
 
 export default function MyDocument(props: DocumentProps & DocumentHeadTagsProps) {
   return (
-    <Html lang="en" className={roboto.className}>
+    <Html lang="en" className={roboto.className} suppressHydrationWarning>
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
@@ -26,6 +26,8 @@ export default function MyDocument(props: DocumentProps & DocumentHeadTagsProps)
 }
 
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
-  const finalProps = await documentGetInitialProps(ctx);
+  const finalProps = await documentGetInitialProps(ctx, {
+    emotionCache,
+  });
   return finalProps;
 };

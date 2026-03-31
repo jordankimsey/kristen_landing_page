@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material';
-import React from 'react';
 import Image from 'next/image';
-import LinkButton from '../../components/LinkButton';
+import LinkButton from '../../src/components/LinkButton';
 
 const index = () => {
   return (
@@ -27,6 +26,7 @@ const index = () => {
           display: { xs: 'block', sm: 'flex' },
           flexDirection: { sm: 'column' },
           alignItems: { sm: 'center' },
+          marginX: '12px'
         }}
       >
         <Box
@@ -37,8 +37,10 @@ const index = () => {
             flexDirection: 'column',
             alignItems: 'center',
             py: 3,
-            px: { sm: 4 },
+            px: 4,
             borderRadius: '13px',
+            minWidth: {sm: '450px'},
+            
           }}
         >
           <Image
@@ -46,6 +48,7 @@ const index = () => {
             alt={'profile-picture'}
             width={120}
             height={120}
+            loading='eager'
             style={{ borderRadius: '50%', border: '1px solid white' }}
           />
           <Typography sx={{ py: 2, fontWeight: 'bold' }}>
@@ -58,22 +61,6 @@ const index = () => {
           <LinkButton
             text='Shop my home-LTK'
             url='https://www.shopltk.com/explore/Kristen%E2%80%99svintagehome'
-          />
-          <LinkButton
-            text='Chicnchill Baskets: Use code KRISTEN55'
-            url='https://www.etsy.com/shop/Chicnchilldecor?coupon=KRISTEN55'
-          />
-          <LinkButton
-            text='Cushion Lab: Use code KRISTENSVINTAGEHOME10'
-            url='https://glnk.io/6xz8w/kristensvintagehome'
-          />
-          <LinkButton
-            text='Clarifion: Use Code KRISTENSVINTAGEHOME for 15% off'
-            url='http://clarifion.com/kristensvintagehome'
-          />
-          <LinkButton
-            text='Hype Inda House: Shop Unique decor with code Kristen for 10% off your entire order '
-            url='https://www.hypeindahouse.com/kristen'
           />
           <LinkButton
             text='TikTok'
