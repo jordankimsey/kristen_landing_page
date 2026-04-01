@@ -26,7 +26,7 @@ const index = () => {
           display: { xs: 'block', sm: 'flex' },
           flexDirection: { sm: 'column' },
           alignItems: { sm: 'center' },
-          marginX: '12px'
+          marginX: '12px',
         }}
       >
         <Box
@@ -39,8 +39,7 @@ const index = () => {
             py: 3,
             px: 4,
             borderRadius: '13px',
-            minWidth: {sm: '450px'},
-            
+            minWidth: { sm: '450px' },
           }}
         >
           <Image
@@ -65,6 +64,11 @@ const index = () => {
           <LinkButton
             text='TikTok'
             url='https://www.tiktok.com/@kristensvintagehome'
+          />
+          <LinkButton
+            text='Request Ad Code'
+            url='/request-ad-code'
+            openInNewTab={false}
           />
         </Box>
       </Box>

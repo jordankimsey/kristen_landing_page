@@ -1,7 +1,15 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const LinkButton = ({ url, text }: { url: string; text: string }) => {
+const LinkButton = ({
+  url,
+  text,
+  openInNewTab = true,
+}: {
+  url: string;
+  text: string;
+  openInNewTab?: boolean;
+}) => {
   return (
     <Button
       sx={{
@@ -14,7 +22,7 @@ const LinkButton = ({ url, text }: { url: string; text: string }) => {
         maxWidth: '450px',
       }}
       href={url}
-      target='_blank'
+      target={openInNewTab ? '_blank' : ''}
       rel='noreferrer noopener'
       fullWidth
     >
