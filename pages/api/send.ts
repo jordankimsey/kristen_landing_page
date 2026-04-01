@@ -10,7 +10,7 @@ export default async function send(req: NextApiRequest, res: NextApiResponse) {
 
   console.log(req.body);
   const { data, error } = await resend.emails.send({
-    from: 'Ad Code Requests <onboarding@resend.dev>',
+    from: 'Ad Code Requests <noreply@kristensvintagehome.com>',
     to: ['jordankimsey@gmail.com', 'kristensvintagehome@gmail.com'],
     subject: 'Ad Code Request',
     react: await AdCodeRequestEmail({ videoLinks, details }),
